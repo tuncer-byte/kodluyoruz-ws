@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim Detayı | Dijital Gençlik Merkezi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .detail-hero {
+            padding: 100px 0 60px;
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 50px;
+            margin-top: -50px;
+        }
+
+        .detail-main {
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .detail-sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .apply-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .detail-section {
+            margin-bottom: 40px;
+        }
+
+        .detail-section h2 {
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+            border-left: 4px solid var(--primary-color);
+            padding-left: 15px;
+        }
+
+        .curriculum-list {
+            list-style: none;
+        }
+
+        .curriculum-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+
+        .curriculum-list li::before {
+            content: '✓';
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        @media (max-width: 992px) {
+            .detail-grid {
+                grid-template-columns: 1fr;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none;">
+                <h2 style="color: var(--primary-color);">KODLUYORUZ</h2>
+                <p style="font-size: 0.7rem; color: var(--secondary-color);">geleceği kodluyoruz >_</p>
+            </a>
+        </div>
+        <div class="nav-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="index.html#about">Hakkımızda</a></li>
+            <li><a href="trainings.html" class="active">Eğitimler</a></li>
+            <li><a href="index.html#gallery">Galeri</a></li>
+            <li><a href="index.html#contact">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- Detail Hero -->
+    <section class="detail-hero">
+        <div class="container">
+            <h1 id="training-title">Eğitim Başlığı</h1>
+            <p id="training-subtitle" style="font-size: 1.2rem; opacity: 0.9; margin-top: 10px;">Eğitim alt başlığı ve
+                kısa özet bilgisi.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="detail-grid">
+            <main class="detail-main">
+                <img id="training-image" src="" alt=""
+                    style="width: 100%; border-radius: var(--border-radius); margin-bottom: 30px; height: 400px; object-fit: cover;">
+
+                <div class="detail-section">
+                    <h2>Eğitim Hakkında</h2>
+                    <p id="training-desc">Eğitim kapsamı, hedefleri ve kazanımları hakkında detaylı açıklama burada yer
+                        alacak.</p>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Neler Öğreneceksiniz?</h2>
+                    <ul class="curriculum-list" id="training-curriculum">
+                        <!-- Will be populated by JS -->
+                    </ul>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Gereksinimler</h2>
+                    <p id="training-reqs">Bu eğitime katılmak için gereken ön bilgi veya teknik donanım bilgileri.</p>
+                </div>
+            </main>
+
+            <aside class="detail-sidebar">
+                <div class="apply-card">
+                    <h3>Hemen Başvur</h3>
+                    <p style="margin: 10px 0 25px; font-size: 0.9rem; color: #666;">Geleceğini şekillendirmek için ilk
+                        adımı at.</p>
+                    <form id="application-form">
+                        <div class="form-group">
+                            <label for="app-name">Ad Soyad</label>
+                            <input type="text" id="app-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="app-email">E-posta</label>
+                            <input type="email" id="app-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="app-phone">Telefon</label>
+                            <input type="tel" id="app-phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="app-motivation">Neden bu eğitimi istiyorsun?</label>
+                            <textarea id="app-motivation" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Başvuruyu Tamamla</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Reused Footer ... -->
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo"
+                        style="color: var(--white); border-color: var(--white);">KODLUYORUZ</a>
+                    <p>Gençlerin teknoloji ile dünyayı değiştirmesine yardımcı oluyoruz.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>İletişim</h4>
+                    <p>İstanbul, Türkiye</p>
+                    <p>info@kodluyoruz.org</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Socials -->
+    <div class="floating-socials">
+        <!-- Reused Floating Socials ... -->
+        <a href="https://instagram.com/kodluyoruz" target="_blank" class="social-btn instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="#333">
+                <path
+                    d="M7.75 2h8.5C19.42 2 22 4.58 22 7.75v8.5c0 3.17-2.58 5.75-5.75 5.75h-8.5C4.58 22 2 19.42 2 16.25v-8.5C2 4.58 4.58 2 7.75 2zm0 1.5c-2.34 0-4.25 1.91-4.25 4.25v8.5c0 2.34 1.91 4.25 4.25 4.25h8.5c2.34 0 4.25-1.91 4.25-4.25v-8.5c0-2.34-1.91-4.25-4.25-4.25h-8.5zm8.17 2.17c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75zM12 7c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5zm0 1.5c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5z" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

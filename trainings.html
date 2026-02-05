@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitimler | Dijital Gençlik Merkezi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none;">
+                <h2 style="color: var(--primary-color);">KODLUYORUZ</h2>
+                <p style="font-size: 0.7rem; color: var(--secondary-color);">geleceği kodluyoruz >_
+                </p>
+            </a>
+        </div>
+        <div class="nav-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="index.html#about">Hakkımızda</a></li>
+            <li><a href="trainings.html" class="active">Eğitimler</a></li>
+            <li><a href="index.html#gallery">Galeri</a></li>
+            <li><a href="index.html#contact">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header"
+        style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/images/hero2.png'), var(--secondary-color); background-size: cover; background-position: center; padding: 100px 0 60px; color: var(--white); text-align: center;">
+        <div class="container">
+            <h1>Tüm Eğitimlerimiz</h1>
+            <p>Kendini geliştirmek istediğin alanı seç, geleceğe hazır ol.</p>
+        </div>
+    </section>
+
+    <!-- Trainings List -->
+    <section class="trainings">
+        <div class="container">
+            <div class="training-grid">
+                <!-- Training Card 1 -->
+                <div class="training-card">
+                    <div class="training-badge">Başvurular Açık</div>
+                    <img src="assets/images/training1.png" alt="Full Stack Web Geliştirme">
+                    <div class="training-card-content">
+                        <h3>Full Stack Web Geliştirme</h3>
+                        <p>Modern web teknolojileriyle (HTML, CSS, JS, React) uçtan uca uygulama geliştirmeyi öğrenin.
+                        </p>
+                        <a href="training-detail.html?id=web-dev" class="btn btn-primary btn-sm">Detay ve Başvuru</a>
+                    </div>
+                </div>
+                <!-- Training Card 2 -->
+                <div class="training-card">
+                    <div class="training-badge">Kontenjan Sınırlı</div>
+                    <img src="assets/images/training2.png" alt="Veri Bilimi ve Yapay Zeka">
+                    <div class="training-card-content">
+                        <h3>Veri Bilimi ve Yapay Zeka</h3>
+                        <p>Python ile veri analizi, makine öğrenmesi ve yapay zeka algoritmalarına giriş yapın.</p>
+                        <a href="training-detail.html?id=data-science" class="btn btn-primary btn-sm">Detay ve
+                            Başvuru</a>
+                    </div>
+                </div>
+                <!-- Training Card 3 -->
+                <div class="training-card">
+                    <div class="training-badge">Yeni Başlıyor</div>
+                    <img src="assets/images/training3.png" alt="UI/UX Tasarım Atölyesi">
+                    <div class="training-card-content">
+                        <h3>UI/UX Tasarım Atölyesi</h3>
+                        <p>Kullanıcı odaklı tasarım prensipleri ve modern prototipleme araçlarını keşfedin.</p>
+                        <a href="training-detail.html?id=uiux" class="btn btn-primary btn-sm">Detay ve Başvuru</a>
+                    </div>
+                </div>
+                <!-- Add 3 more for variety -->
+                <div class="training-card">
+                    <div class="training-badge">Yakında</div>
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80"
+                        alt="Siber Güvenlik">
+                    <div class="training-card-content">
+                        <h3>Siber Güvenlik Temelleri</h3>
+                        <p>Ağ güvenliği, penetrasyon testleri ve etik hackerlık dünyasına adım atın.</p>
+                        <a href="training-detail.html?id=cyber" class="btn btn-primary btn-sm">Detay ve Başvuru</a>
+                    </div>
+                </div>
+                <div class="training-card">
+                    <div class="training-badge">Yakında</div>
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=600&q=80"
+                        alt="Mobil Uygulama">
+                    <div class="training-card-content">
+                        <h3>Mobil Uygulama Geliştirme</h3>
+                        <p>Flutter veya React Native kullanarak her iki platform için uygulama geliştirmeyi öğrenin.</p>
+                        <a href="training-detail.html?id=mobile" class="btn btn-primary btn-sm">Detay ve Başvuru</a>
+                    </div>
+                </div>
+                <div class="training-card">
+                    <div class="training-badge">Yakında</div>
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80"
+                        alt="Dijital Pazarlama">
+                    <div class="training-card-content">
+                        <h3>Dijital Pazarlama Uzmanlığı</h3>
+                        <p>SEO, SEM, içerik pazarlaması ve sosyal medya stratejileriyle dijitalde fark yaratın.</p>
+                        <a href="training-detail.html?id=marketing" class="btn btn-primary btn-sm">Detay ve Başvuru</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo"
+                        style="color: var(--white); border-color: var(--white);">KODLUYORUZ</a>
+                    <p>Gençlerin teknoloji ile dünyayı değiştirmesine yardımcı oluyoruz.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Hızlı Menü</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="index.html#about">Hakkımızda</a></li>
+                        <li><a href="trainings.html">Eğitimler</a></li>
+                        <li><a href="index.html#contact">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>İletişim</h4>
+                    <p>İstanbul, Türkiye</p>
+                    <p>info@kodluyoruz.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kodluyoruz. Tüm Hakları Saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Socials -->
+    <div class="floating-socials">
+        <a href="https://instagram.com/kodluyoruz" target="_blank" class="social-btn instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="#333">
+                <path
+                    d="M7.75 2h8.5C19.42 2 22 4.58 22 7.75v8.5c0 3.17-2.58 5.75-5.75 5.75h-8.5C4.58 22 2 19.42 2 16.25v-8.5C2 4.58 4.58 2 7.75 2zm0 1.5c-2.34 0-4.25 1.91-4.25 4.25v8.5c0 2.34 1.91 4.25 4.25 4.25h8.5c2.34 0 4.25-1.91 4.25-4.25v-8.5c0-2.34-1.91-4.25-4.25-4.25h-8.5zm8.17 2.17c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75zM12 7c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5zm0 1.5c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5z" />
+            </svg>
+        </a>
+        <a href="https://x.com/kodluyoruz" target="_blank" class="social-btn x" title="X (Twitter)">
+            <svg viewBox="0 0 24 24" fill="#333">
+                <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+        </a>
+        <a href="https://kodluyoruz.org" target="_blank" class="social-btn website" title="Web Sitemiz">
+            <svg viewBox="0 0 24 24" fill="#333">
+                <path
+                    d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 1.5c1.196 0 2.333.255 3.36.713-.482.723-.915 1.562-1.282 2.503-.923-.234-1.9-.366-2.914-.366-1.112 0-2.182.164-3.18.468C8.598 5.672 9.4 4.417 10.43 3.896 10.93 3.638 11.453 3.5 12 3.5zm-5.636 2.05c-.655.655-1.198 1.41-1.61 2.245.89-.37 1.844-.654 2.852-.84-.194-.64-.344-1.277-.45-1.905-.285.14-.55.308-.792.5zm11.272 0c-.242-.192-.507-.36-.792-.5-.106.628-.256 1.265-.45 1.905 1.008.186 1.962.47 2.852.84-.412-.835-.955-1.59-1.61-2.245zM12 7.352c.9 0 1.765.114 2.584.32-.232.836-.516 1.763-.84 2.762-1.144-.3-2.316-.46-3.488-.46s-2.344.16-3.488.46c-.324-1-.608-1.926-.84-2.762.82-.206 1.684-.32 2.584-.32s1.436.012 2.088.012zm-5.734.954c-.235.39-.444.79-.625 1.204.66.273 1.378.513 2.148.71-.237.913-.448 1.866-.628 2.842-1.09-.234-2.1-.564-3.003-.984.316-1.55.932-2.9 1.756-3.772.112-.132.228-.258.352-.376zm11.468 0c.124.118.24.244.352.376.824.872 1.44 2.222 1.756 3.772-.9.42-1.913.75-3.003.984-.18-.976-.39-1.93-.628-2.842.77-.197 1.488-.437 2.148-.71-.18-.414-.39-.814-.625-1.204zM12 11.5c1.17 0 2.307.155 3.392.443-.16 1.132-.387 2.4-.673 3.774-.88-.235-1.794-.367-2.719-.367s-1.84.132-2.72.367c-.285-1.375-.513-2.642-.672-3.774 1.085-.288 2.222-.443 3.392-.443zm-7.618.963c.697.35 1.517.635 2.442.847-.13.987-.243 1.996-.34 3-.984-.176-1.927-.45-2.83-.8-.066-.33-.117-.665-.153-1 .184-.35.5-.7.881-1.047zm15.236 0c.38.347.697.697.88 1.047-.036.335-.087.67-.153 1-.903.35-1.846.624-2.83.8-.097-1.004-.21-2.013-.34-3 .925-.212 1.745-.497 2.442-.847zM12 16.65c.874 0 1.734.118 2.56.342-.178 1.4-.41 2.9-.694 4.45-.612-.14-1.233-.217-1.866-.217-.633 0-1.254.077-1.866.217-.284-1.55-.516-3.05-.694-4.45.826-.224 1.686-.342 2.56-.342zm-5.614.86c.744.154 1.533.277 2.366.368-.07.95-.125 1.886-.166 2.766-.66-.46-1.246-1.025-1.742-1.685-.164-.22-.32-.45-.458-.69zm11.228 0c-.138.24-.294.47-.458.69-.496.66-1.082 1.225-1.742 1.685-.04-.88-.096-1.816-.166-2.766.833-.09 1.622-.214 2.366-.368z" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

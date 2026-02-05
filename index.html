@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KODLUYORUZ | Dijital Gençlik Merkezi</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h2 style="color: var(--primary-color);">KODLUYORUZ</h2>
+            <p style="font-size: 0.7rem; margin-top: -5px;">geleceği kodluyoruz >_</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Ana Sayfa</a></li>
+            <li><a href="#about">Biz Kimiz</a></li>
+            <li><a href="#stats">İstatistikler</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#contact">İletişim</a></li>
+        </ul>
+        <div class="nav-toggle" id="mobile-menu">
+            <span>&#9776;</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <video autoplay muted loop id="hero-video" playsinline>
+            <source src="assets/videos/Dijital_Gençlik_Merkezi_Hero_Video.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Bugünün Gençleri Geleceğin Meslekleri</h1>
+            <p>Yapay zeka ile kodluyoruz.
+            <div class="hero-btns">
+                <a href="#about" class="btn btn-primary">Keşfet</a>
+                <a href="#contact" class="btn btn-outline"
+                    style="border: 2px solid var(--white); background: transparent; color: var(--white); margin-left: 15px;">Bize
+                    Ulaşın</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainings Section -->
+    <section class="trainings" id="trainings">
+        <div class="container">
+            <h2 class="section-title">Güncel Eğitimler</h2>
+            <div class="training-grid">
+                <div class="training-card">
+                    <div class="training-badge">Başvurular Açık</div>
+                    <img src="assets/images/training1.png" alt="Full Stack Web Geliştirme">
+                    <div class="training-card-content">
+                        <h3>Full Stack Web Geliştirme</h3>
+                        <p>Modern web teknolojileriyle (HTML, CSS, JS, React) uçtan uca uygulama geliştirmeyi öğrenin.
+                        </p>
+                        <a href="training-detail.html?id=web-dev" class="btn btn-primary btn-sm">Detay ve Başvuru</a>
+                    </div>
+                </div>
+                <div class="training-card">
+                    <div class="training-badge">Kontenjan Sınırlı</div>
+                    <img src="assets/images/training2.png" alt="Veri Bilimi ve Yapay Zeka">
+                    <div class="training-card-content">
+                        <h3>Veri Bilimi ve Yapay Zeka</h3>
+                        <p>Python ile veri analizi, makine öğrenmesi ve yapay zeka algoritmalarına giriş yapın.</p>
+                        <a href="training-detail.html?id=data-science" class="btn btn-primary btn-sm">Detay ve
+                            Başvuru</a>
+                    </div>
+                </div>
+                <div class="training-card">
+                    <div class="training-badge">Yeni Başlıyor</div>
+                    <img src="assets/images/training3.png" alt="UI/UX Tasarım Atölyesi">
+                    <div class="training-card-content">
+                        <h3>UI/UX Tasarım Atölyesi</h3>
+                        <p>Kullanıcı odaklı tasarım prensipleri ve modern prototipleme araçlarını keşfedin.</p>
+                        <a href="training-detail.html?id=uiux" class="btn btn-primary btn-sm">Detay ve Başvuru</a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="trainings.html" class="btn btn-outline"
+                    style="border: 2px solid var(--primary-color); color: var(--primary-color); background: transparent;">Tüm
+                    Eğitimleri Gör</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Biz Kimiz</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Vizyonumuz: Teknoloji Üreten Bir Gençlik</h3>
+                    <p>Kodluyoruz, Türkiye'yi bir teknoloji merkezi haline getirmeyi hedefleyen bir sosyal girişimdir.
+                        Dijital Gençlik Merkezi ile gençlerimize yazılım, tasarım ve dijital beceriler kazandırarak
+                        onları geleceğin dünyasına hazırlıyoruz.</p>
+                    <p style="margin-top: 15px;">Eğitimlerimiz tamamen uygulama odaklı ve sektörün ihtiyaçlarına yönelik
+                        olarak tasarlanmıştır. Mentörlük desteği ve topluluk etkinliklerimizle her zaman yanınızdayız.
+                    </p>
+                </div>
+                <div class="about-img">
+                    <img src="assets/images/about.png" alt="Youth collaborating on technology">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="counter" data-target="1500">0</h3>
+                    <p>Aktif Katılımcı</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="85">0</h3>
+                    <p>Tamamlanan Proje</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="120">0</h3>
+                    <p>Uzman Eğitmen</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="12">0</h3>
+                    <p>Şehir</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Galeri</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/gallery1.png" alt="Robotik Atölyesi">
+                    <div class="gallery-overlay">Robotik Kodlama Atölyesi</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery2.png" alt="Gençlik Hackathonu">
+                    <div class="gallery-overlay">Hack the Future: Gençlik Edisyonu</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80"
+                        alt="Mobil Uygulama Geliştirme">
+                    <div class="gallery-overlay">Mobil Uygulama Geliştirme Eğitimi</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=600&q=80"
+                        alt="Mentörlük Oturumu">
+                    <div class="gallery-overlay">Birebir Mentörlük Desteği</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
+                        alt="Yapay Zeka Semineri">
+                    <div class="gallery-overlay">Yapay Zeka ve Gelecek Semineri</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80"
+                        alt="Mezuniyet Töreni">
+                    <div class="gallery-overlay">Mezuniyet ve Sertifika Töreni</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Bize Ulaşın</h2>
+            <div class="contact-layout">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <h3>Mesaj Gönderin</h3>
+                        <div class="form-group">
+                            <label for="name">Ad Soyad</label>
+                            <input type="text" id="name" placeholder="İsminizi giriniz" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-posta</label>
+                            <input type="email" id="email" placeholder="E-posta adresiniz" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Konu</label>
+                            <input type="text" id="subject" placeholder="Mesaj konusu" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesajınız</label>
+                            <textarea id="message" rows="5" placeholder="Mesajınızı buraya yazınız" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
+                </div>
+                <div class="contact-map">
+                    <!-- Google Maps Placeholder / Iframe -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192698.26125434423!2d28.87175!3d41.015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1cc1e01f4ca15!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>KODLUYORUZ</h4>
+                    <p>Türkiye'nin teknoloji geleceğini inşa eden gençleri bir araya getiriyoruz.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Hızlı Menü</h4>
+                    <ul>
+                        <li><a href="#hero">Ana Sayfa</a></li>
+                        <li><a href="#about">Hakkımızda</a></li>
+                        <li><a href="#stats">İstatistikler</a></li>
+                        <li><a href="#gallery">Galeri</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Sosyal Medya</h4>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter/X</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 KODLUYORUZ Dijital Gençlik Merkezi. Tüm Hakları Saklıdır.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Socials -->
+    <div class="floating-socials">
+        <a href="https://instagram.com/kodluyoruz" target="_blank" class="social-btn instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="#333">
+                <path
+                    d="M7.75 2h8.5C19.42 2 22 4.58 22 7.75v8.5c0 3.17-2.58 5.75-5.75 5.75h-8.5C4.58 22 2 19.42 2 16.25v-8.5C2 4.58 4.58 2 7.75 2zm0 1.5c-2.34 0-4.25 1.91-4.25 4.25v8.5c0 2.34 1.91 4.25 4.25 4.25h8.5c2.34 0 4.25-1.91 4.25-4.25v-8.5c0-2.34-1.91-4.25-4.25-4.25h-8.5zm8.17 2.17c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75zM12 7c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5zm0 1.5c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5z" />
+            </svg>
+        </a>
+        <a href="https://x.com/kodluyoruz" target="_blank" class="social-btn x" title="X (Twitter)">
+            <svg viewBox="0 0 24 24" fill="#333">
+                <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+        </a>
+        <a href="https://kodluyoruz.org" target="_blank" class="social-btn website" title="Web Sitemiz">
+            <svg viewBox="0 0 24 24" fill="#333">
+                <path
+                    d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 1.5c1.196 0 2.333.255 3.36.713-.482.723-.915 1.562-1.282 2.503-.923-.234-1.9-.366-2.914-.366-1.112 0-2.182.164-3.18.468C8.598 5.672 9.4 4.417 10.43 3.896 10.93 3.638 11.453 3.5 12 3.5zm-5.636 2.05c-.655.655-1.198 1.41-1.61 2.245.89-.37 1.844-.654 2.852-.84-.194-.64-.344-1.277-.45-1.905-.285.14-.55.308-.792.5zm11.272 0c-.242-.192-.507-.36-.792-.5-.106.628-.256 1.265-.45 1.905 1.008.186 1.962.47 2.852.84-.412-.835-.955-1.59-1.61-2.245zM12 7.352c.9 0 1.765.114 2.584.32-.232.836-.516 1.763-.84 2.762-1.144-.3-2.316-.46-3.488-.46s-2.344.16-3.488.46c-.324-1-.608-1.926-.84-2.762.82-.206 1.684-.32 2.584-.32s1.436.012 2.088.012zm-5.734.954c-.235.39-.444.79-.625 1.204.66.273 1.378.513 2.148.71-.237.913-.448 1.866-.628 2.842-1.09-.234-2.1-.564-3.003-.984.316-1.55.932-2.9 1.756-3.772.112-.132.228-.258.352-.376zm11.468 0c.124.118.24.244.352.376.824.872 1.44 2.222 1.756 3.772-.9.42-1.913.75-3.003.984-.18-.976-.39-1.93-.628-2.842.77-.197 1.488-.437 2.148-.71-.18-.414-.39-.814-.625-1.204zM12 11.5c1.17 0 2.307.155 3.392.443-.16 1.132-.387 2.4-.673 3.774-.88-.235-1.794-.367-2.719-.367s-1.84.132-2.72.367c-.285-1.375-.513-2.642-.672-3.774 1.085-.288 2.222-.443 3.392-.443zm-7.618.963c.697.35 1.517.635 2.442.847-.13.987-.243 1.996-.34 3-.984-.176-1.927-.45-2.83-.8-.066-.33-.117-.665-.153-1 .184-.35.5-.7.881-1.047zm15.236 0c.38.347.697.697.88 1.047-.036.335-.087.67-.153 1-.903.35-1.846.624-2.83.8-.097-1.004-.21-2.013-.34-3 .925-.212 1.745-.497 2.442-.847zM12 16.65c.874 0 1.734.118 2.56.342-.178 1.4-.41 2.9-.694 4.45-.612-.14-1.233-.217-1.866-.217-.633 0-1.254.077-1.866.217-.284-1.55-.516-3.05-.694-4.45.826-.224 1.686-.342 2.56-.342zm-5.614.86c.744.154 1.533.277 2.366.368-.07.95-.125 1.886-.166 2.766-.66-.46-1.246-1.025-1.742-1.685-.164-.22-.32-.45-.458-.69zm11.228 0c-.138.24-.294.47-.458.69-.496.66-1.082 1.225-1.742 1.685-.04-.88-.096-1.816-.166-2.766.833-.09 1.622-.214 2.366-.368z" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
